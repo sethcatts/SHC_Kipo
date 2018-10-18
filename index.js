@@ -1,5 +1,5 @@
 const botconfig  = require("./botconfig.json");
-const tools      = require("./componentFunctions.js")
+const tools      = require("./helpers/componentFunctions.js")
 const Commando   = require('discord.js-commando');
 const path       = require("path");
 
@@ -9,13 +9,7 @@ const client = new Commando.Client({
 });
 
 client.on('ready', () => {
-   console.log("Kip status: ONLINE");
-})
-
-client.on('message', (message) => {
-   if(message.content.includes("kip" || "Kip")) {
-      tools.sendImage(message, "images/x to doubt.jpg");
-   }
+   console.log("Kipo status: ONLINE");
 })
 
 client.registry
