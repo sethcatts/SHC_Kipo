@@ -1,5 +1,4 @@
 const botconfig    = require("./botconfig.json");
-const tools        = require("./helpers/componentFunctions.js")
 const Commando     = require('discord.js-commando');
 const path         = require("path");
 const keywordCheck = require("./helpers/keywordCheck.js");

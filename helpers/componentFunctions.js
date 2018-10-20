@@ -3,6 +3,7 @@ module.exports = {
    //ARGS: message(object), image[directory](string)
    //Send image file to specified channel
    sendImage: function(msg, image) {
+      console.log("Sending Image");
       msg.channel.send({
          files:[{
             attachment: image
