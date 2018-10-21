@@ -23,6 +23,7 @@ module.exports = {
       } else if(contentArray.includes("fun")
              || contentArray.includes("lol")
              || contentArray.includes("lmao")) {
+         message.channel.send("STOP STOP STOOOPP!")
          tools.sendImage(message, "./images/funpolice.jpg");
       }
    }
