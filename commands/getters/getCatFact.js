@@ -11,8 +11,8 @@ class reply extends commando.Command {
       });
    }
    async run(message, args) {
-      request('https://cat-fact.herokuapp.com/facts/random',
-             (error, response, body) => {
+      var api = "https://cat-fact.herokuapp.com/facts/random"
+      request(api, (error, response, body) => {
          var obj = JSON.parse(body);
          tools.embed(message, "Cat Fact", obj.text + "\nby CatFacts.com", null);
       })
