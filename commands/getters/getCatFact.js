@@ -1,5 +1,6 @@
 const commando = require('discord.js-commando');
 const request  = require('request');
+const tools    = require('./componentFunctions.js');
 class reply extends commando.Command {
    constructor(client) {
       super(client, {
@@ -10,9 +11,10 @@ class reply extends commando.Command {
       });
    }
    async run(message, args) {
-      request('https://cat-fact.herokuapp.com/facts/random', (error, response, body) => {
+      request('https://cat-fact.herokuapp.com/facts/random',
+             (error, response, body) => {
          var obj = JSON.parse(body);
-         message.channel.send(obj.text);
+         tools.embed(message, "Cat Fact", obj.text + "\nby CatFacts.com", null);
       })
    }
 }
