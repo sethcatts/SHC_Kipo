@@ -23,7 +23,8 @@ client.on('message', (message) => {
 //Register command groups
 client.registry
    .registerGroups([
-      ["base", "base commands"]
+      ["base", "base commands"],
+      ["getters", "Get commands"]
    ])
    .registerDefaults()
    .registerCommandsIn(path.join(__dirname, 'commands'));
