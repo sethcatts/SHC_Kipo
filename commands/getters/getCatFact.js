@@ -1,6 +1,6 @@
 const commando = require('discord.js-commando');
 const request  = require('request');
-const tools    = require('./componentFunctions.js');
+const tools    = require("D:/Programming & Computer Science/Projects/Kipo/helpers/componentFunctions.js");
 class reply extends commando.Command {
    constructor(client) {
       super(client, {
@@ -14,7 +14,7 @@ class reply extends commando.Command {
       var api = "https://cat-fact.herokuapp.com/facts/random"
       request(api, (error, response, body) => {
          var obj = JSON.parse(body);
-         tools.embed(message, "Cat Fact", obj.text + "\n- CatFacts.com", null);
+         tools.embed(message, "Cat Fact", obj.text + "\n\n- CatFacts.com", null);
       })
    }
 }

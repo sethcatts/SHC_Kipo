@@ -1,3 +1,5 @@
+const Commando     = require('discord.js-commando');
+
 module.exports = {
 
    //ARGS: message(object), image[directory](string)
@@ -15,11 +17,13 @@ module.exports = {
    //      text(string), color[hex code](string)
    //Create an embed message in the specified channel
    embed: function(message, title, text, color=0xFF0000) {
-      const embed = new RichEmbed()
-         .setTitle(title)
-         .setColor(color)
-         .setDescription(text);
-      msg.channel.send(embed);
+      message.channel.send({
+         embed: {
+            title:title,
+            color: color,
+            description: text
+         }
+      });
    },
 
    //ARGS: args
