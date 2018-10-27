@@ -12,11 +12,11 @@ class methods extends commando.Command {
       });
    }
    async run(message, args) {
-      var api = "//https://api.cryptonator.com/api/ticker/" + args + "-usd";
+      var api = "https://api.cryptonator.com/api/ticker/" + args + "-usd";
       request(api, (error, response, body) => {
          var obj = JSON.parse(body);
-         tools.embed(message, obj.base,
-                     obj.price + "\n\n- Cryptonator", null);
+         tools.embed(message, obj.ticker.base, "$ " + 
+                     obj.ticker.price + "\n\n- Cryptonator", null);
       })
    }
 }
