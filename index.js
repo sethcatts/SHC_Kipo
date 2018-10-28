@@ -29,5 +29,5 @@ client.registry
    .registerDefaults()
    .registerCommandsIn(path.join(__dirname, 'commands'));
 
-
+//Bot login method call
 client.login(botconfig.token);
