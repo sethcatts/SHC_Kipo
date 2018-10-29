@@ -26,6 +26,13 @@ module.exports = {
       });
    },
 
+   //ARGS: None
+   //Return a status for Kipo
+   getStatus: function() {
+      var StatusList = ["League of Legends: TDM", "NANI!?", "amazing", "7/10"];
+      return StatusList[Math.floor(Math.random(StatusList.length))];
+   },
+
    //ARGS: args
    //Placeholder function
    placeHolderFunction: function(args) {

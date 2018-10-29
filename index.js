@@ -2,6 +2,7 @@ const botconfig    = require("./botconfig.json");
 const Commando     = require('discord.js-commando');
 const path         = require("path");
 const keywordCheck = require("./helpers/keywordCheck.js");
+const tools    = require("./helpers/componentFunctions.js");
 
 //Init client
 const client = new Commando.Client({
@@ -12,6 +13,7 @@ const client = new Commando.Client({
 //On login status update
 client.on('ready', () => {
    console.log("Kipo status: ONLINE");
+   client.user.setGame(tools.getStatus());
 })
 
 //Listen and run keyword check function
