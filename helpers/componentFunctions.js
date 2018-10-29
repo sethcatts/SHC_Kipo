@@ -29,8 +29,10 @@ module.exports = {
    //ARGS: None
    //Return a status for Kipo
    getStatus: function() {
-      var StatusList = ["League of Legends: TDM", "NANI!?", "amazing", "7/10"];
-      return StatusList[Math.floor(Math.random(StatusList.length))];
+      var StatusList = ["League of Legends: TDM", "NANI!?", "amazing", "7/10",
+                        "Nekopara Vol 3", "Tetris Blitzkrieg", "yoooo",
+                         "unhelpful", "Kip", "You never know", "Tik Taq Tou"];
+      return StatusList[Math.floor((Math.random() * 10) + 1);];
    },
 
    //ARGS: args
