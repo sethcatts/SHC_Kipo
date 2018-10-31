@@ -8,21 +8,21 @@ module.exports = {
       if(contentArray.includes("weeb") || contentArray.includes("weaboo")) {
          message.channel.send("Did someone say weeb?");
          tools.sendImage(message, "./images/otaku.png");
-      } else if(contentArray.includes("fuck")
-             || contentArray.includes("shit")
-             || contentArray.includes("damn")) {
+      } else if(contentArray.includes("randomstringplaceholder")
+             || contentArray.includes("randomstringplaceholder")
+             || contentArray.includes("randomstringplaceholder")) {
          tools.sendImage(message, "./images/noswearing.jpg");
-      } else if(contentArray.includes("why")
-             || contentArray.includes("stop")
-             || contentArray.includes("stupid")) {
+      } else if(contentArray.includes("randomstringplaceholder")
+             || contentArray.includes("randomstringplaceholder")
+             || contentArray.includes("randomstringplaceholder")) {
          tools.sendImage(message, "./images/dudetrustme.png");
-      } else if(contentArray.includes("kipo")
+      } else if(contentArray.includes("randomstringplaceholder")
              || contentArray.includes("bot")
              || contentArray.includes("robot")) {
          tools.sendImage(message, "./images/watcher.jpg");
       } else if(contentArray.includes("fun")
-             || contentArray.includes("lol")
-             || contentArray.includes("lmao")) {
+             || contentArray.includes("randomstringplaceholder")
+             || contentArray.includes("randomstringplaceholder")) {
          message.channel.send("STOP STOP STOOOPP!")
          tools.sendImage(message, "./images/funpolice.jpg");
       }
