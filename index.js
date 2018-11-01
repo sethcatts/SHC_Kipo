@@ -1,8 +1,7 @@
 const botconfig    = require("./botconfig.json");
 const Commando     = require('discord.js-commando');
 const path         = require("path");
-const keywordCheck = require("./helpers/keywordCheck.js");
-const tools    = require("./helpers/componentFunctions.js");
+const tools        = require("./helpers/componentFunctions.js");
 
 //Init client
 const client = new Commando.Client({
