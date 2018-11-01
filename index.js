@@ -16,12 +16,6 @@ client.on('ready', () => {
    client.user.setGame(tools.getStatus());
 })
 
-//Listen and run keyword check function
-client.on('message', (message) => {
-   console.log("Running keyword check");
-   keywordCheck.keywordCheck(message);
-})
-
 //Register command groups
 client.registry
    .registerGroups([
