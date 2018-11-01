@@ -1,5 +1,5 @@
 const commando = require('discord.js-commando');
-class add extends commando.Command {
+class mul extends commando.Command {
    constructor(client) {
       super(client, {
          name: 'mul',
@@ -14,4 +14,4 @@ class add extends commando.Command {
       message.channel.send("Answer: " + ans);
    }
 }
-module.exports = add;
+module.exports = mul;
