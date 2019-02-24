@@ -1,6 +1,7 @@
 # Kipo Bot 
 A general purpose discord bot made using node.js
-Mostly returns API call data.
+
+Mostly prints API call data to the chat.
 
 ### Commands Available
 ### Libraries Used
