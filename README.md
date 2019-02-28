@@ -1,5 +1,6 @@
-//__Kipo is depreciated in many ways and I am no longer working on it. 
-//Code found in this repo does not reflect my current skill as a developer. __
+//Kipo is depreciated in many ways and I am no longer working on it.
+
+//Code found in this repo does not reflect my current skill as a developer.
 
 # Kipo Bot
 General purpose discord bot.
